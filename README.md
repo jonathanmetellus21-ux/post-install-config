@@ -175,6 +175,6 @@ After completing this configuration, the osTicket environment is set up to:
 
 ## 👤 Author
 
-**Your Name**
+**Jonathan Metellus**
 IT Support | Help Desk | Azure | osTicket
-[LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/your-username)
+[LinkedIn](https://www.linkedin.com/in/jonathan-m-85a5b91a6/) • [GitHub](https://github.com/your-username)
