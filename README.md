@@ -14,7 +14,8 @@ This project demonstrates the post-installation configuration of the open-source
 - **Remote Desktop Protocol (RDP)**
 - **Internet Information Services (IIS)**
 - **osTicket** (Open-Source Help Desk Ticketing System)
-- **Windows 10** (21H2)
+- **Windows 11** (25h2)
+
 
 ---
 
