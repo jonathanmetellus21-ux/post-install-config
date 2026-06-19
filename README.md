@@ -2,180 +2,168 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1 align="center">osTicket – Post-Installation Configuration</h1>
-
-This project demonstrates the post-installation configuration of the open-source help desk ticketing system **osTicket**. It covers roles, departments, teams, agents, users, SLA plans, and help topics — simulating a real-world IT support environment.
-
----
-
-## 🖥️ Environments and Technologies Used
-
-- **Microsoft Azure** (Virtual Machine)
-- **Remote Desktop Protocol (RDP)**
-- **Internet Information Services (IIS)**
-- **osTicket** (Open-Source Help Desk Ticketing System)
-- **Windows 11** (25h2)
+<h1>osTicket - Post-Install Configuration</h1>
+This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
 
----
+<h2>Video Demonstration</h2>
 
-## 📋 Prerequisites
+- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
 
-> Complete the [osTicket Installation Lab](https://github.com/your-username/osticket-prereqs) before starting this configuration.
+<h2>Environments and Technologies Used</h2>
 
-- osTicket successfully installed and running
-- Admin credentials ready
-- Access to both the Admin Panel and Agent Panel
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Internet Information Services (IIS)
 
----
+<h2>Operating Systems Used </h2>
 
-## 🔐 Login URLs
+- Windows 10</b> (21H2)
 
-| Portal | URL |
-|---|---|
-| **Admin / Analyst Login** | `http://localhost/osTicket/scp/login.php` |
-| **End User Portal** | `http://localhost/osTicket` |
+<h2>Post-Install Configuration Objectives</h2>
 
----
+- Configure Roles, Departments, and Teams
+- Configure User Registration Settings
+- Configure Agents (Workers) and Users (Customers)
+- Configure SLA Plans (Sev-A, Sev-B, Sev-C)
+- Configure Help Topics for Ticket Submission
 
-## ⚙️ Configuration Steps
+<h2>Login URLs</h2>
 
-### 1. Admin Panel vs. Agent Panel
+- **Admin/Analyst Login Page:** http://localhost/osTicket/scp/login.php
+- **End Users osTicket URL:** http://localhost/osTicket
 
-Before configuring, understand the difference between the two panels:
-
-- **Admin Panel** – Used to manage system settings, agents, roles, departments, and SLAs
-- **Agent Panel** – Used by help desk agents to manage and respond to tickets
-
-> You can toggle between panels using the link in the top-right corner of the screen.
+<h2>Configuration Steps</h2>
 
 ---
 
-### 2. Configure Roles
-
-**Path:** `Admin Panel → Agents → Roles`
-
-Roles define the permissions granted to agents within a department.
-
-| Role | Description |
-|---|---|
-| **Supreme Admin** | Full access to all settings and ticket management |
-
----
-
-### 3. Configure Departments
-
-**Path:** `Admin Panel → Agents → Departments`
-
-Departments control ticket visibility and routing across the help desk.
-
-| Department | Purpose |
-|---|---|
-| **SysAdmins** | Handles system-level issues and elevated support |
+<h3>Step 1: Agent Panel vs. Admin Panel</h3>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Agent Panel vs Admin Panel"/>
+</p>
+<p>
+Before configuring osTicket, it is important to understand the difference between the Admin Panel and the Agent Panel. The Admin Panel is used to manage system-wide settings such as roles, departments, SLA plans, and help topics. The Agent Panel is where help desk staff (agents) manage and respond to tickets. You can switch between panels using the toggle link in the top-right corner of the osTicket interface.
+</p>
+<br />
 
 ---
 
-### 4. Configure Teams
+<h3>Step 2: Configure Roles</h3>
 
-**Path:** `Admin Panel → Agents → Teams`
+**Path:** Admin Panel -> Agents -> Roles
 
-Teams allow agents from different departments to collaborate on specific issues.
-
-| Team | Purpose |
-|---|---|
-| **Online Banking** | Cross-department team for banking-related escalations |
-
----
-
-### 5. User Settings – Ticket Creation
-
-**Path:** `Admin Panel → Settings → User Settings`
-
-Configured ticket submission to require user registration:
-
-- ☑️ **Uncheck:** *"Unregistered users can create tickets"*
-- ✅ **Enable:** *Registration Required — users must log in to submit tickets*
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure Roles"/>
+</p>
+<p>
+Roles are used to group and assign permissions to agents within departments. In this configuration, a role called <strong>Supreme Admin</strong> was created with full access to all ticketing functions and system settings. This role allows the assigned agent to manage all aspects of the help desk environment.
+</p>
+<br />
 
 ---
 
-### 6. Configure Agents (Workers)
+<h3>Step 3: Configure Departments</h3>
 
-**Path:** `Admin Panel → Agents → Add New`
+**Path:** Admin Panel -> Agents -> Departments
 
-Agents are the help desk staff who respond to and resolve tickets.
-
-| Agent | Department |
-|---|---|
-| **Jane** | SysAdmins |
-| **John** | Support |
-
----
-
-### 7. Configure Users (Customers)
-
-**Path:** `Agent Panel → Users → Add New`
-
-Users are the end customers who submit support tickets.
-
-| User |
-|---|
-| **Karen** |
-| **Ken** |
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure Departments"/>
+</p>
+<p>
+Departments control ticket visibility and help route tickets to the correct team. A department called <strong>SysAdmins</strong> was created to handle system-level and elevated support requests. Departments can be configured to separate Help Desk, SysAdmins, and Networking teams, ensuring tickets are handled by the appropriate group.
+</p>
+<br />
 
 ---
 
-### 8. Configure SLA Plans
+<h3>Step 4: Configure Teams</h3>
 
-**Path:** `Admin Panel → Manage → SLA`
+**Path:** Admin Panel -> Agents -> Teams
 
-SLA (Service Level Agreement) plans define the expected response and resolution times for tickets.
-
-| SLA Plan | Grace Period | Schedule |
-|---|---|---|
-| **Sev-A** | 1 hour | 24/7 |
-| **Sev-B** | 4 hours | 24/7 |
-| **Sev-C** | 8 hours | Business Hours |
-
-> **Sev-A** is reserved for the most critical outages. **Sev-C** applies to low-priority, non-urgent requests.
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure Teams"/>
+</p>
+<p>
+Teams allow agents from different departments to be pulled together to handle specific issues or projects. A team called <strong>Online Banking</strong> was created to support cross-departmental collaboration on banking-related escalations and critical requests.
+</p>
+<br />
 
 ---
 
-### 9. Configure Help Topics
+<h3>Step 5: User Registration Settings</h3>
 
-**Path:** `Admin Panel → Manage → Help Topics`
+**Path:** Admin Panel -> Settings -> User Settings
 
-Help Topics guide users when submitting tickets and help route them to the correct department.
-
-| Help Topic |
-|---|
-| Business Critical Outage |
-| Personal Computer Issues |
-| Equipment Request |
-| Password Reset |
-| Other |
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="User Registration Settings"/>
+</p>
+<p>
+To control who can submit tickets, the setting <strong>"Unregistered users can create tickets"</strong> was unchecked. Registration is now required — users must create an account and log in before they are able to submit a support ticket. This helps maintain accountability and reduces spam or anonymous ticket submissions.
+</p>
+<br />
 
 ---
 
-## ✅ Summary
+<h3>Step 6: Configure Agents (Workers)</h3>
 
-After completing this configuration, the osTicket environment is set up to:
+**Path:** Admin Panel -> Agents -> Add New
 
-- Route tickets based on department and severity
-- Enforce SLA response times
-- Allow agents and end users to interact through a structured support portal
-- Simulate a real-world IT help desk workflow
-
----
-
-## 🔗 Related Projects
-
-- 📦 [osTicket – Prerequisites and Installation](https://github.com/your-username/osticket-prereqs)
-- 🎫 [osTicket – Ticket Lifecycle Examples](https://github.com/your-username/ticket-lifecycle)
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure Agents"/>
+</p>
+<p>
+Agents are the help desk staff responsible for managing and resolving tickets. Two agents were added in this configuration: <strong>Jane</strong>, assigned to the SysAdmins department, and <strong>John</strong>, assigned to the Support department. Each agent was given appropriate role permissions based on their department.
+</p>
+<br />
 
 ---
 
-## 👤 Author
+<h3>Step 7: Configure Users (Customers)</h3>
 
-**Jonathan Metellus**
-IT Support | Help Desk | Azure | osTicket
-[LinkedIn](https://www.linkedin.com/in/jonathan-m-85a5b91a6/) • [GitHub](https://github.com/jonathanmetellus21-ux)
+**Path:** Agent Panel -> Users -> Add New
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure Users"/>
+</p>
+<p>
+Users are the end customers who submit support tickets through the osTicket portal. Two users were created for this lab: <strong>Karen</strong> and <strong>Ken</strong>. These accounts simulate real-world customers who interact with the help desk by submitting and tracking their support requests.
+</p>
+<br />
+
+---
+
+<h3>Step 8: Configure SLA Plans</h3>
+
+**Path:** Admin Panel -> Manage -> SLA
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure SLA Plans"/>
+</p>
+<p>
+SLA (Service Level Agreement) plans define the expected timeframe for ticket resolution based on severity. Three SLA plans were configured:<br /><br />
+- <strong>Sev-A</strong> – Grace Period: 1 hour | Schedule: 24/7 (Critical outages, highest priority)<br />
+- <strong>Sev-B</strong> – Grace Period: 4 hours | Schedule: 24/7 (High priority, around-the-clock coverage)<br />
+- <strong>Sev-C</strong> – Grace Period: 8 hours | Schedule: Business Hours (Low priority, standard requests)<br /><br />
+These SLA plans ensure tickets are escalated and resolved within appropriate timeframes based on their impact and urgency.
+</p>
+<br />
+
+---
+
+<h3>Step 9: Configure Help Topics</h3>
+
+**Path:** Admin Panel -> Manage -> Help Topics
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Configure Help Topics"/>
+</p>
+<p>
+Help Topics guide users when submitting a ticket by allowing them to categorize their issue. The following help topics were created to cover common support scenarios:<br /><br />
+- Business Critical Outage<br />
+- Personal Computer Issues<br />
+- Equipment Request<br />
+- Password Reset<br />
+- Other<br /><br />
+These categories help route tickets to the correct department and agent while also making it easier to track recurring issues across the organization.
+</p>
+<br />
