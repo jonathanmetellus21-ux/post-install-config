@@ -79,8 +79,8 @@ Roles are used to group and assign permissions to agents within departments. In 
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Departments List Page"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="SysAdmins Department Settings"/></td>
+    <td><img src="https://i.imgur.com/V5OuMBt.png width="100%" alt="Departments List Page"/></td>
+    <td><img src="https://i.imgur.com/4Pmn1xz.png" width="100%" alt="SysAdmins Department Settings"/></td>
   </tr>
   <tr>
     <td align="center"><em>Departments List Page</em></td>
