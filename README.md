@@ -184,8 +184,8 @@ Users are the end customers who submit support tickets through the osTicket port
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="SLA Plans List – Sev-A, Sev-B, Sev-C"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Sev-A SLA Settings"/></td>
+    <td><img src="https://i.imgur.com/CELuoZg.png" width="100%" alt="SLA Plans List – Sev-A, Sev-B, Sev-C"/></td>
+    <td><img src="https://i.imgur.com/W8P7RSJ.png" width="100%" alt="Sev-A SLA Settings"/></td>
   </tr>
   <tr>
     <td align="center"><em>SLA Plans List – Sev-A, Sev-B, Sev-C</em></td>
@@ -209,8 +209,8 @@ These SLA plans ensure tickets are escalated and resolved within appropriate tim
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Help Topics List"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Business Critical Outage Help Topic"/></td>
+    <td><img src="https://i.imgur.com/7EZNN5c.png" width="100%" alt="Help Topics List"/></td>
+    <td><img src="https://i.imgur.com/ZlEYite.png" width="100%" alt="Business Critical Outage Help Topic"/></td>
   </tr>
   <tr>
     <td align="center"><em>Help Topics List</em></td>
