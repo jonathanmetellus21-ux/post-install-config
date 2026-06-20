@@ -100,8 +100,8 @@ Departments control ticket visibility and help route tickets to the correct team
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Teams List Page"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Online Banking Team Members"/></td>
+    <td><img src="https://i.imgur.com/E50VfKV.png" width="100%" alt="Teams List Page"/></td>
+    <td><img src="https://i.imgur.com/Od5j5oP.png" width="100%" alt="Online Banking Team Members"/></td>
   </tr>
   <tr>
     <td align="center"><em>Teams List Page</em></td>
@@ -121,8 +121,8 @@ Teams allow agents from different departments to be pulled together to handle sp
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="User Settings Page"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Registration Required Setting Unchecked"/></td>
+    <td><img src="https://i.imgur.com/JhpnXwg.png" width="100%" alt="User Settings Page"/></td>
+    <td><img src="https://i.imgur.com/aKCxjVA.png" width="100%" alt="Registration Required Setting Unchecked"/></td>
   </tr>
   <tr>
     <td align="center"><em>User Settings Page</em></td>
@@ -142,8 +142,8 @@ To control who can submit tickets, the setting <strong>"Unregistered users can c
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Agents List – Jane and John"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Agent Profile – Department Assignment"/></td>
+    <td><img src="https://i.imgur.com/0JUc4JB.png" width="100%" alt="Agents List – Jane and John"/></td>
+    <td><img src="https://i.imgur.com/gLt3Pq9.png" width="100%" alt="Agent Profile – Department Assignment"/></td>
   </tr>
   <tr>
     <td align="center"><em>Agents List – Jane &amp; John</em></td>
@@ -163,8 +163,8 @@ Agents are the help desk staff responsible for managing and resolving tickets. T
 
 <table>
   <tr>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="User Directory – Karen and Ken"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="User Profile Page"/></td>
+    <td><img src="https://i.imgur.com/HZvQ4cD.png" width="100%" alt="User Directory – Karen and Ken"/></td>
+    <td><img src="https://i.imgur.com/PrieHnN.png" width="100%" alt="User Profile Page"/></td>
   </tr>
   <tr>
     <td align="center"><em>User Directory – Karen &amp; Ken</em></td>
