@@ -38,7 +38,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 <table>
   <tr>
     <td><img src="https://i.imgur.com/bnnEXTW.png" width="100%" alt="Admin Panel View"/></td>
-    <td><img src="https://i.imgur.com/placeholder.png" width="100%" alt="Agent Panel View"/></td>
+    <td><img src="https://i.imgur.com/5iqeMTr.png" width="100%" alt="Agent Panel View"/></td>
   </tr>
   <tr>
     <td align="center"><em>Admin Panel</em></td>
@@ -59,7 +59,7 @@ Before configuring osTicket, it is important to understand the difference betwee
 <table>
   <tr>
     <td><img src="https://i.imgur.com/vmfQyzk.png" width="100%" alt="Roles List Page"/></td>
-    <td><img src="https://i.imgur.com/4AXPhNy.png" width="100%" alt="Supreme Admin Permissions"/></td>
+    <td><img src="https://i.imgur.com/GFNyBv6.png" width="100%" alt="Supreme Admin Permissions"/></td>
   </tr>
   <tr>
     <td align="center"><em>Roles List Page</em></td>
